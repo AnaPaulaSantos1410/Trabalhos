@@ -44,5 +44,44 @@
     </html>
 
 
+
+
+* {
+    margin: 60px;
+    width: auto; 
+    /* 1920px desktop */
+}
+body {
+    background-color: #de1f6b;
+    /* background-image */
+}
+h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+}
+p {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+img {
+height: 200px;
+width: 200px;
+}
+
+    nav{ background-color: #f9f8f8; padding: 10px 0;}
+
+    nav ul {list-style-type: none: margin: 0; padding: 0; display: flex;
+         justify-content: center; } 
+
+ nav ul li {
+    margin: 0 15px; 
+}
+ nav ul li { 
+    color: rgb(199, 72, 238);
+     none; 
+ }
+
+
     
    
