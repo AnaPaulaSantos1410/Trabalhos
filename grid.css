@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: ;
+
+}
+.grid-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 5px ;
+    padding: 10px;
+}
+.grid-gallery-item {
+
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 0px
+    overflow: hidden;
+
+}
+
+.grid-gallery-item img {
+    width: 50%;
+    height: auto;
+}
+
+.grid-gallery-container:hover .grid-gallery-item{
+    opacity: .5;
+}
+.grid-gallery-container .grid-gallery-item:hover {
+    opacity: 1
+}
+/* Cada item da galeria */
+.grid-gallery-item {
+    margin: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 400px; /* Define uma largura fixa para cada item */
+    transition: all .3s;
+}
+.grid-gallery-item:hover{
+    transform: translateY(-20px)
+}
