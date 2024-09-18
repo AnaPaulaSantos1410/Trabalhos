@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    nav {
+        background-color: #f90606;
+        padding: 5px 0;
+        box-shadow: 0px 4px 8px 0px rgba(252, 252, 252, 0.836);
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: left;
+    }
+    
+    nav ul li {
+        position: relative; /* Necessário para o posicionamento do dropdown */
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+        padding: 10px;
+        display: block; /* Torna o link clicável em toda a área */
+        transition: color 0.3s;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    nav ul li a:hover {
+        color: ;#d10c0c
+    }
+    
+    /* Estilo do dropdown */
+    nav ul li .dropdown-content {
+        display: none; /* Esconde o submenu inicialmente */
+        position: absolute; /* Posiciona o submenu em relação ao item pai */
+        background-color: #d10c0c63;
+        box-shadow: 0px 8px 16px 0px rgba(247, 246, 246, 0.2);
+        z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+        min-width: 160px;
+        padding: 0;
+    }
+    
+    nav ul li .dropdown-content li {
+        margin: 0;
+    }
+    
+    nav ul li .dropdown-content li a {
+        padding: 10px 15px;
+    }
+    
+    nav ul li .dropdown-content li a:hover {
+        background-color: #fcfcfc93; /* Cor de fundo ao passar o mouse sobre o submenu */
+    }
+    
+    /* Exibe o submenu ao passar o mouse sobre o item principal */
+    nav ul li:hover .dropdown-content {
+        display: block;
+    }
+
+    /* From Uiverse.io by csemszepp */ 
+.container {
+    width: 100%;
+    height: 100%;
+    --s: 75px; /* control the size */
+  
+    --_c: #0000, #fff 1deg 79deg, #0000 81deg;
+    --g0: conic-gradient(from 140deg at 50% 87.5%, var(--_c));
+    --g1: conic-gradient(from 140deg at 50% 81.25%, var(--_c));
+    --g2: conic-gradient(from 140deg at 50% 75%, var(--_c));
+    --g3: conic-gradient(at 10% 20%, #0000 75%, #fff 0);
+    background: var(--g0) 0 calc(var(--s) / -4),
+      var(--g0) var(--s) calc(3 * var(--s) / 4), var(--g1),
+      var(--g1) var(--s) var(--s), var(--g2) 0 calc(var(--s) / 4),
+      var(--g2) var(--s) calc(5 * var(--s) / 4),
+      var(--g3) calc(var(--s) / -10) var(--s),
+      var(--g3) calc(9 * var(--s) / 10) calc(2 * var(--s)),
+      repeating-conic-gradient(from 45deg, #d10c0c 0 25%, #f43838 0 50%);
+    background-size: calc(2 * var(--s)) calc(2 * var(--s));
+  }
+  
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(215, 198, 14, 0.614);
+    width: 400px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #d10c0c ;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #d10c0c ;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #d10c0c ;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d10c0c ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d10c0c ;
+}
+
+.add-responsavel {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #d10c0c ;
+    text-decoration: none;
+}
+
+.add-responsavel:hover {
+    text-decoration: underline;
+}
