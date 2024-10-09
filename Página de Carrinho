@@ -28,7 +28,23 @@ HTML
                         <td> 
                            
                             <input type="number" value="1" min="1" class="quantidade">
-                            
+                            <td>
+                            <form class="opcoes-compra"">
+                                <label for="tamanho">Tamanho:</label>
+                                <select id="tamanho">
+                                  <option>P</option>
+                                  <option>M</option>
+                                  <option>G</option>
+                                  <option>GG</option>
+                                </select>
+                                <label for="cor">Cor:</label>
+                          <select id="cor">
+                            <option>Vermelho</option>
+                            <option>Azul</option>
+                            <option>Preto</option>
+                          </select>
+                        
+                        </td>
                         </td>
                         <td class="preco-unitario"> R$ 50,00</td>
                         <td class="preco-total"> R$ 50,00</td>
@@ -37,9 +53,26 @@ HTML
                         </td>
                     </tr>
                     <tr>
-                        <td>Produto Exemplo 2</td>
+                        <td>img/Gatinho.png</td>
                         <td> 
                             <input type="number" value="2" min="1" class="quantidade">
+                        </td>
+                        <td>
+                            <form class="opcoes-compra"">
+                                <label for="tamanho">Tamanho:</label>
+                                <select id="tamanho">
+                                  <option>P</option>
+                                  <option>M</option>
+                                  <option>G</option>
+                                  <option>GG</option>
+                                </select>
+                                <label for="cor">Cor:</label>
+                          <select id="cor">
+                            <option>Vermelho</option>
+                            <option>Azul</option>
+                            <option>Preto</option>
+                          </select>
+                        
                         </td>
                         <td class="preco-unitario"> R$ 30,00</td>
                         <td class="preco-total"> R$ 60,00</td>
